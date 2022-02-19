@@ -25,10 +25,10 @@ def main():
     </div>
     """
     st.markdown(html_temp,unsafe_allow_html=True)
-    variance = st.text_input("Variance","")
-    skewness = st.text_input("Skewness","")
-    curtosis = st.text_input("Curtosis","")
-    entropy = st.text_input("Entropy","")
+    variance = st.text_input("Variance:","")
+    skewness = st.text_input("Skewness:","")
+    curtosis = st.text_input("Curtosis:","")
+    entropy = st.text_input("Entropy:","")
     result=""
     if st.button("Predict"):
         result=predict_note_authentication(variance,skewness,curtosis,entropy)
